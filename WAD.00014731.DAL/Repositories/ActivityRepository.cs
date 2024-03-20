@@ -22,7 +22,7 @@ namespace WAD._00014731.Repositories
         public async Task<Activity> GetByIdAsync(int id)
         {
             return await _context.Activities
-                                 .Where(a => a.ActivityId == id)
+                                 .Where(a => a.Id == id)
                                  .FirstOrDefaultAsync();
         }
 

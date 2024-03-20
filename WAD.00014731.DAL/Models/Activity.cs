@@ -2,7 +2,7 @@
 {
     public class Activity
     {
-        public int ActivityId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public DateTime Date { get; set; }
         public double DurationInMinutes { get; set; }

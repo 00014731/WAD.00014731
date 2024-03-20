@@ -51,7 +51,7 @@ namespace WAD._00014731.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateActivity(int id, ActivityDto activityDto)
         {
-            if (id != activityDto.ActivityId)
+            if (id != activityDto.Id)
             {
                 return BadRequest();
             }

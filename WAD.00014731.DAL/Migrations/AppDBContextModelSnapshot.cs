@@ -24,11 +24,11 @@ namespace WAD._00014731.DAL.Migrations
 
             modelBuilder.Entity("WAD._00014731.Models.Activity", b =>
                 {
-                    b.Property<int>("ActivityId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActivityId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CaloriesBurned")
                         .HasColumnType("int");
@@ -46,7 +46,7 @@ namespace WAD._00014731.DAL.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("ActivityId");
+                    b.HasKey("Id");
 
                     b.HasIndex("UserId");
 

@@ -29,7 +29,7 @@ namespace WAD._00014731.DAL.Migrations
                 name: "Activities",
                 columns: table => new
                 {
-                    ActivityId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -39,7 +39,7 @@ namespace WAD._00014731.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Activities", x => x.ActivityId);
+                    table.PrimaryKey("PK_Activities", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Activities_Users_UserId",
                         column: x => x.UserId,
